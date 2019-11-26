@@ -1,4 +1,4 @@
-sap.ui.controller('C:.Users.i518276.TacticTool.View1', {
+sap.ui.controller('C:.Users.i518276.TacticTool.Views.View1', {
 
     /**
     * Called when a controller is instantiated and its View controls (if available) are already created.
