@@ -1,0 +1,116 @@
+<mvc:View controllerName="tactic.tacticsheet.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:f="sap.f"
+	xmlns:table="sap.ui.table" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Tactic Tool" class="sapUiContentPadding">
+					<content>
+						<VBox height="100%">
+							<items>
+								<HBox justifyContent="SpaceBetween">
+									<items>
+										<HBox justifyContent="Start" alignContent="Center">
+											<items>
+												<Title text="" level="H1"/>
+											</items>
+										</HBox>
+										<FlexBox justifyContent="SpaceAround" width="20%" height="7%">
+											<items>
+												<Button text="All Activities"/>
+												<Button text="My Activities"/>
+												<f:Avatar src="" initials="" displayShape="Circle" displaySize="S" imageFitType="Cover"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<HBox justifyContent="SpaceBetween">
+									<items>
+										<FlexBox justifyContent="Start" alignContent="Center">
+											<items>
+												<SearchField placeholder="Search by..." showSearchButton="true" visible="true" width="auto" id="searchBy" search="filterGlobally"/>
+												<ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+													<items>
+														<core:Item text="Priority" enabled="true" key="Priority"/>
+														<core:Item text="Status" enabled="true" key="Status"/>
+														<core:Item text="Subcluster" enabled="true" key="Subcluster"/>
+														<core:Item text="CRM-Code" enabled="true" key="CRM-Code"/>
+														<core:Item text="Activity Name" enabled="true" key="Activity Name"/>
+														<core:Item text="Campaign Type" enabled="true" key="Campaign Type"/>
+														<core:Item text="Marketeer" enabled="true" key="Marketeer"/>
+													</items>
+												</ComboBox>
+											</items>
+										</FlexBox>
+										<FlexBox justifyContent="End" alignItems="Center">
+											<items>
+												<Label text="Sort by:"/>
+												<RadioButtonGroup columns="8" selectedIndex="0" valueState="None" width="405px" editable="true" enabled="true" textDirection="Inherit"
+													select="_onRadioButtonGroupSelect">
+													<buttons>
+														<RadioButton text="Recently added" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="true"/>
+														<RadioButton text="Anciently added" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+													</buttons>
+												</RadioButtonGroup>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<HBox justifyContent="SpaceBetween">
+									<items>
+										<Button text="Add Tactic"/>
+										<Button text="Duplicate Tactic"/>
+										<Button text="Edit Tactic"/>
+									</items>
+								</HBox>
+							</items>
+							<FlexBox height="75%">
+								<ScrollContainer horizontal="true" vertical="true" focusable="true" width="100%">
+									<Table id="table" width="77.75rem">
+										<columns>
+											<Column width="12em">
+												<Text text="Priority"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Status"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Subcluster"/>
+											</Column>
+											<Column width="12em">
+												<Text text="CRM-Code"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Activity Name"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Campaign Type"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Marketeer"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Start Date"/>
+											</Column>
+											<Column width="12em">
+												<Text text="End Date"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Quarter Start"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Quarter End"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Host Venue"/>
+											</Column>
+										</columns>
+									</Table>
+								</ScrollContainer>
+							</FlexBox>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
