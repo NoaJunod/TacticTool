@@ -1,4 +1,4 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="TacticTool.controller.AdminView">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="MarketingToolTestSpace.MarketingToolTest.controller.adminView">
 	<App id="app">
 		<pages>
 			<Page id="page" title="Tactic Tool" class="sapUiContentPadding">
@@ -7,9 +7,7 @@
 						<content>
 							<FlexBox width="100%" id="box0_1574862960216">
 								<items>
-									<Button xmlns="sap.m" text="Back to Details" id="backToDetailButton" press="navBack" icon="sap-icon://nav-back"/>
-									<Button xmlns="sap.m" text="Edit" id="editButton" icon="sap-icon://edit" press="onEdit" type="Ghost"/>
-									<Button xmlns="sap.m" text="Save" id="saveButton" icon="sap-icon://save" blocked="true" press="onSave" type="Ghost"/>
+									<Button xmlns="sap.m" text="Back to List" press="navBack" id="backToDetailButton" icon="sap-icon://nav-back"/>
 								</items>
 							</FlexBox>
 						</content>
@@ -21,17 +19,164 @@
 							<Text xmlns="sap.m" text="Combobox Items" id="generalInfoTitleID" width="100%" class="sapUiSmallMargin"/>
 						</items>
 					</VBox>
-					<Layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
-					    <sap.ui.layout:content>
-					        <InputListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Navigation" label="Priority" id="item494" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem type="Navigation" label="Status" id="item495" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Subcluster" id="item495_copy" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Campaign Type" id="item495_copy2" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Specified Campaign Type" id="item495_copy3" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Marketeer" id="item495_copy4" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Host Venue" id="item495_copy5" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
-					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Type of Costs" id="item495_copy6" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/></sap.ui.layout:content>
-					</Layout:Grid>
+				</content>
+				<content>
+					<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy" defaultSpan="XL6 L6 M6 S6">
+						<sap.ui.layout:content>
+							<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy177">
+								<HBox width="100%" id="hbox0">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy3" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Priority" id="priorityTextID_copy3"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy3" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Priority {Item}" id="priorityItemID"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy178">
+								<HBox width="100%" id="hbox0_copy">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy4" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Status" id="priorityTextID_copy4"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy4" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Status {Item}" id="priorityItemID_copy"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy179">
+								<HBox width="100%" id="hbox0_copy2">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy5" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Subcluster" id="priorityTextID_copy5"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy5" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy2" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Subcluster {Item}" id="priorityItemID_copy2"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy180">
+								<HBox width="100%" id="hbox0_copy3">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy6" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Campaign Type" id="priorityTextID_copy6"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy6" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy3" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Campaign Type {Item}" id="priorityItemID_copy3"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy181">
+								<HBox width="100%" id="hbox0_copy4">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy7" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Specified Campaign Type" id="priorityTextID_copy7"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy7" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy4" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Specified Campaign Type {Item}" id="priorityItemID_copy4"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy182">
+								<HBox width="100%" id="hbox0_copy5">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy8" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Marketeer" id="priorityTextID_copy8"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy8" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy5" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Marketeer {Item}" id="priorityItemID_copy5"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy183">
+								<HBox width="100%" id="hbox0_copy6">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy9" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Host Venue" id="priorityTextID_copy9"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy9" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy6" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Host Venue {Item}" id="priorityItemID_copy6"/>
+								</List>
+							</VBox>
+							<VBox xmlns:core="sap.ui.core" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy184">
+								<HBox width="100%" id="hbox0_copy7">
+									<items>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="box0_copy10" alignContent="SpaceAround" alignItems="Center">
+											<items>
+												<Text xmlns="sap.m" text="Type of Costs" id="priorityTextID_copy10"/>
+											</items>
+										</FlexBox>
+										<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="bbox0_copy10" alignItems="Inherit">
+											<items>
+												<Button xmlns="sap.m" id="addPriority_copy7" icon="sap-icon://add" type="Transparent" text="Add Item"/>
+											</items>
+										</FlexBox>
+									</items>
+								</HBox>
+								<List mode="Delete" delete="handleDelete">
+									<InputListItem label="Type of Costs {Item}" id="priorityItemID_copy7"/>
+								</List>
+							</VBox>
+						</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
 				</content>
 			</Page>
 		</pages>
