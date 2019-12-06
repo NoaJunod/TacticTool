@@ -1,23 +1,23 @@
 sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
-	return Controller.extend("MarketingToolTestSpace.MarketingToolTest.controller.adminView", {
+	return Controller.extend("TacticTool.controller.AdminView", {
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
-		 * @memberOf MarketingToolTestSpace.MarketingToolTest.view.adminView
+		 * @memberOf TacticTool.view.AdminView
 		 */
 		onInit: function () {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.getRoute("adminView").attachMatched(this._onRouteMatched, this);
+			oRouter.getRoute("AdminView").attachMatched(this._onRouteMatched, this);
 		},
 		navBack: function () {
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-				oRouter.navTo("detailedView.view.xml");
+				oRouter.navTo("DetailedView.view.xml");
 			}
 			/**
 			 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 			 * (NOT before the first rendering! onInit() is used for that one!).
-			 * @memberOf MarketingToolTestSpace.MarketingToolTest.view.adminView
+			 * @memberOf TacticTool.view.AdminView
 			 */
 			//	onBeforeRendering: function() {
 			//
@@ -25,21 +25,21 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 			/**
 			 * Called when the View has been rendered (so its HTML is part of the document). Post-rendering manipulations of the HTML could be done here.
 			 * This hook is the same one that SAPUI5 controls get after being rendered.
-			 * @memberOf MarketingToolTestSpace.MarketingToolTest.view.adminView
+			 * @memberOf TacticTool.view.AdminView
 			 */
 			//	onAfterRendering: function() {
 			//
 			//	},
 			/**
 			 * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
-			 * @memberOf MarketingToolTestSpace.MarketingToolTest.view.adminView
+			 * @memberOf TacticTool.view.AdminView
 			 */
 			//	onExit: function() {
 			//
 			//	}
 			,
 		/**
-		 *@memberOf MarketingToolTestSpace.MarketingToolTest.controller.adminView
+		 *@memberOf TacticTool.controller.AdminView
 		 */
 		action: function (oEvent) {
 			var that = this;

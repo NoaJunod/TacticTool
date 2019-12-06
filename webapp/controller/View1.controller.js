@@ -5,7 +5,7 @@ sap.ui.define([
 ], function (Controller, Filter, FilterOperator) {
 	"use strict";
 
-	return Controller.extend("tactic.tacticsheet.controller.View1", {
+	return Controller.extend("TacticTool.controller.View1", {
 
 		onInit: function () {
 
@@ -31,6 +31,11 @@ sap.ui.define([
 			}
 
 			this._filter();
+		},
+
+		goToDetailedView: function (oEvent) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("DetailedView", true);
 		}
 	});
 });
