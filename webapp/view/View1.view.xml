@@ -65,46 +65,202 @@
 							</items>
 							<FlexBox height="75%">
 								<ScrollContainer horizontal="true" vertical="true" focusable="true" width="100%">
-									<Table id="table" width="77.75rem">
-										<columns>
-											<Column width="12em">
-												<Text text="Priority"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Status"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Subcluster"/>
-											</Column>
-											<Column width="12em">
-												<Text text="CRM-Code"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Activity Name"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Campaign Type"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Marketeer"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Start Date"/>
-											</Column>
-											<Column width="12em">
-												<Text text="End Date"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Quarter Start"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Quarter End"/>
-											</Column>
-											<Column width="12em">
-												<Text text="Host Venue"/>
-											</Column>
-										</columns>
-									</Table>
+									<table:Table id="table" width="77.75rem">
+										<table:columns>
+											<table:Column width="12em">
+												<Label text="Priority"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Status"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Subcluster"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="CRM-Code"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Activity Name"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Hilights/additional Description"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Campaign Type"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Marketeer"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Start Date"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="End Date"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Quarter Start"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Quarter End"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Host Venue"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="CH-DE"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="CH-FR"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Public Sector"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Healthcare"/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Retail "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Consumer Prod. "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Insurance "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Banking "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Plat. & Tech. "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="People (HR) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Intelligent Spent Mgmt "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Experience Mgmt + Intelligent Enterprise "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Digital Core "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="CX "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="General Business "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Services "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="DDC "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Type of Cost "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Cost of Activity "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Incremental Fundings (Source in Comment) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Barter Deal Value "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Brutto Marketing Expence "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Marketing Revenue "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Net Marketing Expense "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Tactic Budget spent on Digital "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Paid "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Web Channels "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Media Productions "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="MSO LE onPrem (Volume) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="MSO LE Cloud (Volume) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="MSO GB onPrem (Volume) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="MSO GB Cloud (Volume) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="MSO Value Total (in Mio CHF) "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Media/PR involved "/>
+												<table:template></table:template>
+											</table:Column>
+											<table:Column width="12em">
+												<Label text="Engagement possible "/>
+												<table:template></table:template>
+											</table:Column>
+										</table:columns>
+									</table:Table>
 								</ScrollContainer>
 							</FlexBox>
 						</VBox>

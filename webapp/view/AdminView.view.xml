@@ -1,4 +1,4 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="MarketingToolTestSpace.MarketingToolTest.controller.adminView">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="TacticTool.controller.AdminView">
 	<App id="app">
 		<pages>
 			<Page id="page" title="Tactic Tool" class="sapUiContentPadding">
