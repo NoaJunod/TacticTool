@@ -1,0 +1,556 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="MarketingToolTestSpace.MarketingToolTest.controller.detailedView" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Tactic Tool" class="sapUiContentPadding">
+					<customHeader title="Tactic Tool">
+						<Toolbar>
+							<content>
+								<FlexBox width="100%" id="box0_1574862960216">
+									<items>
+										<Button xmlns="sap.m" text="Back to List" id="backButton" icon="sap-icon://nav-back"/>
+										<Button xmlns="sap.m" text="Edit" id="editButton" icon="sap-icon://edit" press="onEdit" type="Ghost"/>
+										<Button xmlns="sap.m" text="Save" id="saveButton" icon="sap-icon://save" blocked="true" press="onSave" type="Ghost"/>
+									</items>
+								</FlexBox>
+								<FlexBox width="100%" id="box1" alignItems="End" justifyContent="End">
+									<items>
+										<Button xmlns="sap.m" text="Edit Items" id="button0_1575472153527" icon="sap-icon://show-edit" type="Ghost" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'adminView'\}\}\}"/>
+										<Button xmlns="sap.m" text="Delete" id="button0" icon="sap-icon://delete" type="Reject" press="onDelete"/>
+										<Button xmlns="sap.m" text="" id="profileButton" icon="sap-icon://person-placeholder" type="Transparent"/>
+									</items>
+								</FlexBox>
+							</content>
+						</Toolbar>
+					</customHeader>
+					<content>
+						<VBox width="100%" direction="Column" id="vbox0">
+							<items>
+								<Text xmlns="sap.m" text="General Information" id="generalInfoTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy12" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy16">
+											<items>
+												<Text xmlns="sap.m" text="Priority" id="priorityTextID"/>
+												<ComboBox xmlns="sap.m" id="priorityFieldID" width="100%" editable="false">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Core" id="item0_copy4"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Leverage" id="item1_copy4"/>
+													</items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy13" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy17">
+											<items>
+												<Text xmlns="sap.m" text="Status" id="statusTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="statusFieldID" width="100%" editable="false">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Planned" id="item0_copy5"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Approved" id="item1_copy5"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Declined/Cancelled" id="item2_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Decision Pending" id="item3_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Execution" id="item4_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Completed" id="item5_copy2"/>
+													</items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy14" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy18">
+											<items>
+												<Text xmlns="sap.m" text="Subcluster" id="subclusterTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="subclusterFieldID" width="100%" editable="false">
+												    <items>
+												        <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Lob Analytics and SAP Leonardo" id="item0_copy9"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Consumer Products and Retail" id="item1_copy9"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Discrete" id="iitem2_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Financial Services" id="iitem3_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Public Services and Healthcare" id="iitem4_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Process and Services" id="iitem5_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Public Services and Healthcare" id="item6_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB Customer Engagement and Commerce" id="item7_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB SCM and Manufacturing" id="item8_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB Finance" id="item9_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Lob IT: D and DM" id="item10_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB IT: SCP" id="item11_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB IT: HEC" id="item12_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="S/4HANA" id="item13_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="S/4HANA Cloud" id="item14_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB Human Resource" id="item15_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="LoB Procurement" id="item16_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="SME" id="item17_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Services" id="item18_copy3"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Corporate Level" id="item91_copy3"/>
+												        </items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy15" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy19">
+											<items>
+												<Text xmlns="sap.m" text="CRM-Code" id="crmCodeTextID"/>
+												<Input xmlns="sap.m" value="{CRM_Code}" id="crmCodeFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy16" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy20">
+											<items>
+												<Text xmlns="sap.m" text="Activity Name" id="activityNameTextID"/>
+												<Input xmlns="sap.m" value="{ACTIVITY_NAME}" id="activityNameFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy17" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy21">
+											<items>
+												<Text xmlns="sap.m" text="Highlights/Additional Description" id="highlightsTextID"/>
+												<TextArea xmlns="sap.m" value="{DESCRIPTION}" rows="4" id="highlightsFieldID" cols="50" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy18" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy22">
+											<items>
+												<Text xmlns="sap.m" text="Campaign Type" id="campaignTypeTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="campaignTypeFieldID" width="100%" editable="false" selectionChange="onCampaignTypeSelect">
+												    <items>
+												        <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Advertising" id="advertisingSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Channel Marketing" id="channelMarketingSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Communications" id="communicationSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Content and Media Productions" id="contentAndMediaProductionsSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Corporate Brand Identity" id="corporateBrandIdentitySelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Direct Markteting" id="directMarketingSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Events" id="eventSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Intelligence" id="intelligenceSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Marketing Technology" id="marketingTechnologySelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Sales and Partner Enablement" id="salesAndPartnerEnablementSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Social Marketing" id="socialMarketingSelectedID"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Web Channels" id="webChannelsSelectedID"/>
+												        </items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="bvox0_copy18" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vvbox0_copy22">
+											<items>
+												<Text xmlns="sap.m" text="Specified Campaign Type" id="specifiedCampaignTypeTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="specifiedCampaignTypeFieldID" width="100%" editable="false">
+												    <items>
+												        <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Advertising" id="ivtem0_copy11"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Channel Marketing" id="vitem1_copy11"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Communications" id="ivitem2_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Content and Media Productions" id="iivtem3_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Corporate Brand Identity" id="ivitem4_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Direct Markteting" id="ivitem5_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Events" id="itvem6_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Intelligence" id="itevm7_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Marketing Technology" id="itemv8_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Sales and Partner Enablement" id="ivtem9_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Social Marketing" id="item10v_copy5"/>
+												        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Web Channels" id="item11v_copy5"/>
+												        </items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy19" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy23">
+											<items>
+												<Text xmlns="sap.m" text="Marketeer" id="MarketeerTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="marketeerFieldID" width="100%" editable="false">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Beti" id="item0_copy6"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Folk" id="item1_copy6"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Hübscher" id="iitem2_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Küffer" id="iitem3_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Landolt" id="iitem4_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Schatzmann" id="iitem5_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Sprecher" id="item6_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Wohler" id="item7_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Scherble" id="item8_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Maag" id="item9_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Lindblom" id="item10_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Junghans" id="item11_copy2"/>
+													</items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy20" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy24">
+											<items>
+												<Text xmlns="sap.m" text="Host Venue" id="hostVenueTextID"/>
+												<ComboBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="hostVenueFieldID" width="100%" editable="false">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="CH-DE" id="item0_copy7"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="CH-FR" id="item1_copy7"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Virtual" id="iiitem1_copy2"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="International" id="iitem1_copy2"/>
+													</items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy21" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy25">
+											<items>
+												<Text xmlns="sap.m" text="Start Date" id="startDateTextID"/>
+												<DatePicker xmlns="sap.m" id="startDateFieldID" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy22" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy26">
+											<items>
+												<Text xmlns="sap.m" text="End Date" id="endDateTextID"/>
+												<DatePicker xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="endDateFieldID" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="targetTitleID">
+							<items>
+								<Text xmlns="sap.m" text="Target" id="title1_copy" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy2" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy23" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns="sap.m" text="CH-DE" selected="false" id="chdeBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy24" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="CH-FR" selected="false" id="chfrBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy2">
+							<items>
+								<Text xmlns="sap.m" text="Target Industries" id="targetIndustriesTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy3" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy25" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns="sap.m" text="Public Sector" selected="false" id="publicSectorBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy26" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Healthcare" selected="false" id="healthcareBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Retail" selected="false" id="retailBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Consumer Production" selected="false" id="consumerProductionBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Insurance" selected="false" id="insuranceBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Banking" selected="false" id="bankingBoxID" editable="false"/>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy3">
+							<items>
+								<Text xmlns="sap.m" text="Target LoB's" id="targetLoBsTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy4" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy27" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns="sap.m" text="Plat. &amp; Tech." selected="false" id="platTechBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy28" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="People (HR)" selected="false" id="peopleBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Intelligent Spent" selected="false" id="intelligentSpentBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Experience Mgmt + Intelligent Enterprise" selected="false" id="experienceMgmtBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Digital Core" selected="false" id="digitalCoreBoxID" editable="false"/>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="CX" selected="false" id="cxBoxID" editable="false"/>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy4">
+							<items>
+								<Text xmlns="sap.m" text="Other Targets" id="otherTargetsTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy5" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy31" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns="sap.m" text="General Business" selected="false" id="generalBusinessBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy33" justifyContent="SpaceBetween">
+									<items>
+										<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="Services" selected="false" id="servicesBoxID" editable="false"/>
+									</items>
+								</FlexBox>
+								<CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" text="DDC" selected="false" id="ddcBoxID" editable="false"/>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy5">
+							<items>
+								<Text xmlns="sap.m" text="Budget" id="budgetTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy6" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy36" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy27">
+											<items>
+												<Text xmlns="sap.m" text="Type of Costs" id="typeOfCostsTextID"/>
+												<ComboBox xmlns="sap.m" id="typeOfCostsFieldID" width="100%" editable="false">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Event" id="item0_copy8"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Programm" id="item1_copy8"/>
+													</items>
+												</ComboBox>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy37" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy28">
+											<items>
+												<Text xmlns="sap.m" text="Cost of Activity" id="costOfActivityTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{COST_OF_ACTIVITY}" id="costOfActivityFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy38" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy29">
+											<items>
+												<Text xmlns="sap.m" text="Incremental Fundings" id="incrementalFundingsTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{INCREMENTAL_FUNDINGS}" id="incrementalFundingsFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy39" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy30">
+											<items>
+												<Text xmlns="sap.m" text="Barter Deal Value" id="barterDealValueTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{BARTER_DEAL_VALUE}" id="barterDealValueFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="bbox0_copy39" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbbox0_copy30">
+											<items>
+												<Text xmlns="sap.m" text="Brutto Marketing Expense" id="bruttoMarketingExpenseTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{BRUTTO_MARKETING_EXPENSE}" id="bruttoMarketingExpenseFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="bbbox0_copy39" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vvbbox0_copy30">
+											<items>
+												<Text xmlns="sap.m" text="Marketing Revenue" id="marketingRevenueTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MARKETING_REVENUE}" id="marketingRevenueFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="bbbbox0_copy39" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbbbbox0_copy30">
+											<items>
+												<Text xmlns="sap.m" text="Net Marketing Expense" id="netMarketingExpenseTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{NET_MARKETING_EXPENSE}" id="netMarketingExpenseFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy6">
+							<items>
+								<Text xmlns="sap.m" text="Digital Cost Split" id="digitalCostSplitTextID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy7" defaultSpan="XL3 L4 M3 S7">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy40" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy31">
+											<items>
+												<Text xmlns="sap.m" text="Tactic Budget spent on Digital" id="tacticBudgetTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{TACTIC_BUDGET}" id="tacticBudgetFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy41" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy32">
+											<items>
+												<Text xmlns="sap.m" text="Paid" id="paidTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{PAID}" id="paidFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy42" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy33">
+											<items>
+												<Text xmlns="sap.m" text="Web Channels" id="webChannelsTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{WEB_CHANNELS}" id="webChannelsFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy43" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy34">
+											<items>
+												<Text xmlns="sap.m" text="Media Productions" id="mediaProductionsTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MEDIA_PRODUCTIONS}" id="mediaProductionsFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy7">
+							<items>
+								<Text xmlns="sap.m" text="KPI Planning" id="kpiPlanningTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy8" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy44" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy35">
+											<items>
+												<Text xmlns="sap.m" text="MSO LE on Prem (Volume)" id="msoleOnPremTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MSOLE_ONPREM}" id="msoleOnPremFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy45" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy36">
+											<items>
+												<Text xmlns="sap.m" text="MSO LE Cloud (Volume)" id="msoleCloudTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MSOLE_CLOUD}" id="msoleCloudFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy46" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy37">
+											<items>
+												<Text xmlns="sap.m" text="MSO GB on Prem (Volume)" id="msogbOnPremTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MSOGB_ONPREM}" id="msogbOnPremFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy47" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy38">
+											<items>
+												<Text xmlns="sap.m" text="MSO GB Cloud (Volume)" id="msogbCloudTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MSOGB_CLOUD}" id="msogbCloudFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:sap.ui.layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="bbox0_copy40" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbbox0_copy31">
+											<items>
+												<Text xmlns="sap.m" text="MSO Value Total (in Mio CHF)" id="msogbValueTotalTextID"/>
+												<Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" value="{MSO_VALUE_TOTAL}" id="msoValueTotalFieldID" width="100%" editable="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+						<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" direction="Column" id="vbox0_copy8">
+							<items>
+								<Text xmlns="sap.m" text="Media &amp; Partner" id="mediaPartnerTitleID" width="100%" class="sapUiSmallMargin"/>
+							</items>
+						</VBox>
+						<sap.ui.layout:Grid xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" id="grid0_copy9" defaultSpan="XL4 L3 M3 S5">
+							<sap.ui.layout:content>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy48" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy39">
+											<items>
+												<Text xmlns="sap.m" text="Media/PR involved" id="mediaTextID"/>
+												<Switch xmlns="sap.m" id="mediaSwitchID" enabled="false" type="AcceptReject"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+								<FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="80%" id="box0_copy49" justifyContent="SpaceBetween">
+									<items>
+										<VBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" width="100%" direction="Column" id="vbox0_copy40">
+											<items>
+												<Text xmlns="sap.m" text="Engagement possible" id="engagementTextID"/>
+												<Switch xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" id="engagementSwitchID" type="AcceptReject" enabled="false"/>
+											</items>
+										</VBox>
+									</items>
+								</FlexBox>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

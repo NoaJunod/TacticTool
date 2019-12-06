@@ -1,0 +1,39 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:Layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="MarketingToolTestSpace.MarketingToolTest.controller.adminView">
+	<App id="app">
+		<pages>
+			<Page id="page" title="Tactic Tool" class="sapUiContentPadding">
+				<customHeader title="Tactic Tool">
+					<Toolbar>
+						<content>
+							<FlexBox width="100%" id="box0_1574862960216">
+								<items>
+									<Button xmlns="sap.m" text="Back to Details" id="backToDetailButton" press="navBack" icon="sap-icon://nav-back"/>
+									<Button xmlns="sap.m" text="Edit" id="editButton" icon="sap-icon://edit" press="onEdit" type="Ghost"/>
+									<Button xmlns="sap.m" text="Save" id="saveButton" icon="sap-icon://save" blocked="true" press="onSave" type="Ghost"/>
+								</items>
+							</FlexBox>
+						</content>
+					</Toolbar>
+				</customHeader>
+				<content>
+					<VBox width="100%" direction="Column" id="vbox0">
+						<items>
+							<Text xmlns="sap.m" text="Combobox Items" id="generalInfoTitleID" width="100%" class="sapUiSmallMargin"/>
+						</items>
+					</VBox>
+					<Layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+					    <sap.ui.layout:content>
+					        <InputListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Navigation" label="Priority" id="item494" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem type="Navigation" label="Status" id="item495" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Subcluster" id="item495_copy" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Campaign Type" id="item495_copy2" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Specified Campaign Type" id="item495_copy3" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Marketeer" id="item495_copy4" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Host Venue" id="item495_copy5" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/>
+					        <InputListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" type="Navigation" label="Type of Costs" id="item495_copy6" detailPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'adminDetailedView'\}\}\}"/></sap.ui.layout:content>
+					</Layout:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
